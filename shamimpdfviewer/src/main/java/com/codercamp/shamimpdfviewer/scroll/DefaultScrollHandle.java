@@ -13,9 +13,9 @@ import android.widget.TextView;
 
 import androidx.core.content.ContextCompat;
 
-import com.codercamp.android_pdf_viewer.R;
 import com.codercamp.shamimpdfviewer.PDFView;
 
+import com.codercamp.shamimpdfviewer.R;
 import com.codercamp.shamimpdfviewer.util.Util;
 
 public class DefaultScrollHandle extends RelativeLayout implements ScrollHandle {
