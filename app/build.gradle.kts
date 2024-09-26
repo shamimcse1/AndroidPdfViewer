@@ -45,6 +45,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
-    project(":shamimpdfviewer")
-
+    implementation("com.github.shamimcse1:AndroidPdfViewer:1.0")
 }
