@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         AsyncTask<String, Void, InputStream>() {
 
         // on below line we are creating a variable for our pdf view.
-        val mypdfView: PDFView = pdfView
+        private val mypdfView: PDFView = pdfView
 
         // on below line we are calling our do in background method.
         override fun doInBackground(vararg params: String?): InputStream? {
@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
             try {
                 // on below line we are creating an url
                 // for our url which we are passing as a string.
-                val url = URL(params.get(0))
+                val url = URL(params[0])
 
                 // on below line we are creating our http url connection.
                 val urlConnection: HttpURLConnection = url.openConnection() as HttpsURLConnection
