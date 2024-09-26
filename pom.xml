@@ -1,0 +1,40 @@
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://maven.apache.org/POM/4.0.0"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.github.shamimcse1</groupId>
+    <artifactId>shamimpdfviewer</artifactId>
+    <version>1.0.0</version>
+    <packaging>aar</packaging>
+
+    <name>AndroidPdfViewer</name>
+    <description>An Android PDF Library provides developers with the tools to display, manipulate,
+        and create PDF files in Android applications. These libraries make it easier to handle PDFs
+        in an efficient and user-friendly way without needing to develop complex PDF rendering from
+        scratch. Android PDF libraries can handle a variety of tasks such as displaying PDF pages,
+        zooming, annotating, and handling text selection.
+    </description>
+
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>shamimcse1</id>
+            <name>Md. Shamim Hossain</name>
+            <email>codercampaa@gmail.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/shamimcse1/AndroidPdfViewer.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:shamimcse1/AndroidPdfViewer.git
+        </developerConnection>
+        <url>https://github.com/shamimcse1/AndroidPdfViewer</url>
+    </scm>
+</project>

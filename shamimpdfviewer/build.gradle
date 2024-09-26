@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.android.library)
+    id("maven-publish")
 }
 
 android {
@@ -23,8 +24,55 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
+    publishing {
+        singleVariant('release') {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
 }
 
+afterEvaluate {
+    publishing {
+        publications {
+            release(MavenPublication) {
+                from components.release
+                groupId = 'com.github.shamimcse1'
+                artifactId = 'shamimpdfviewer'
+                version = '1.0.0'
+
+
+                pom {
+                    name = 'shamimpdfviewer'
+                    description = 'A description of MyLibrary.'
+                    url = 'https://github.com/shamimcse1/AndroidPdfViewer'
+
+                    licenses {
+                        license {
+                            name = 'The Apache License, Version 2.0'
+                            url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                        }
+                    }
+
+                    developers {
+                        developer {
+                            id = 'shamimcse1'
+                            name = 'Md. Shamim Hossain'
+                            email = 'codercampaa@gmail.com'
+                        }
+                    }
+
+                    scm {
+                        connection = 'scm:git:git://github.com/shamimcse1/AndroidPdfViewer.git'
+                        developerConnection = 'scm:git:ssh://git@github.com:shamimcse1/AndroidPdfViewer.git'
+                        url = 'https://github.com/shamimcse1/AndroidPdfViewer'
+                    }
+                }
+            }
+        }
+    }
+}
 dependencies {
 
     implementation libs.androidx.appcompat
