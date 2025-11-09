@@ -5,7 +5,8 @@ plugins {
 
 android {
     namespace 'com.codercamp.shamimpdfviewer'
-    compileSdk 34
+    compileSdk 36
+    ndkVersion "28.0.6917172"
 
     defaultConfig {
         minSdk 24
